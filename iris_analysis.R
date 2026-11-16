@@ -4,9 +4,6 @@ renv::init()
 
 library(tidyverse)
 
-# save the packages
-renv::snapshot()
-
 data(iris)
 head(iris)
 summary(iris)
@@ -62,7 +59,8 @@ ggplot(iris, aes(x = Species,
   ) +
   theme_minimal()
 
-
+# save the packages
+renv::snapshot()
 
 
 
